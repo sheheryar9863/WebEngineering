@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign-up</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signup-form" action="#">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <small id="username-error" class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <small id="password-error" class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="birthdate">Birthdate</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <small id="birthdate-error" class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <small id="email-error" class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <small id="gender-error" class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                <small id="phone-error" class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="zipcode">Zip Code</label>
+                <input type="text" id="zipcode" name="zipcode" required>
+                <small id="zipcode-error" class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required>
+                <small id="country-error" class="error-message"></small>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
